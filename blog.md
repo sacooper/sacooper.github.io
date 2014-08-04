@@ -1,10 +1,7 @@
 ---
 layout: page
-group: primary
-title: Blog
+title: Most Recent
 ---
-## Most Recent
-
 <ul class="posts">  
 	{% for post in site.posts limit:10 %}  
 	   <li>  
