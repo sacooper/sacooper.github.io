@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"backgr",
+				"background-color"
+			],
+			[
 				"fmt_ppr_",
 				"fmt_ppr_cmp_exp_chk"
 			],
@@ -510,10 +514,6 @@
 			[
 				"pint",
 				"print_string"
-			],
-			[
-				"append",
-				"appendNormals"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 	"build_system": "Packages/User/beluga-source.sublime-build",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 285.0,
 		"selected_items":
 		[
 			[
@@ -723,7 +723,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 449.0
+		"width": 593.0
 	},
 	"console":
 	{
@@ -740,27 +740,38 @@
 	},
 	"file_history":
 	[
+		"/home/scott/Programming/sacooper-git/Webpage/_includes/themes/bootstrap-3/default.html",
+		"/home/scott/Programming/sacooper-git/Webpage/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css",
+		"/home/scott/Programming/sacooper-git/Webpage/index.md",
+		"/home/scott/Programming/sacooper-git/Webpage/_includes/themes/bootstrap-3/page.html",
+		"/home/scott/Programming/sacooper-git/Webpage/_includes/themes/bootstrap-3/post.html",
+		"/home/scott/Programming/sacooper-git/Webpage/_includes/JB/setup",
+		"/home/scott/Programming/sacooper-git/Webpage/assets/themes/semantic/css/bs-sticky-footer.css",
+		"/home/scott/Programming/sacooper-git/Webpage/assets/themes/bootstrap-3/bootstrap/css/bootstrap-theme.min.css",
+		"/home/scott/Programming/sacooper-git/Webpage/assets/themes/bootstrap-3/css/style.css",
+		"/home/scott/Programming/sacooper-git/Webpage/_layouts/home.html",
+		"/home/scott/Programming/sacooper-git/Webpage/_includes/themes/semantic/post.html",
+		"/home/scott/Programming/sacooper-git/Webpage/_includes/JB/pages_list",
+		"/home/scott/Programming/sacooper-git/Webpage/_includes/themes/semantic/page.html",
+		"/home/scott/Programming/sacooper-git/Webpage/_includes/themes/semantic/default.html",
+		"/home/scott/Programming/sacooper-git/Webpage/_layouts/default.html",
+		"/home/scott/Programming/sacooper-git/Webpage/_layouts/post.html",
+		"/home/scott/Programming/sacooper-git/Webpage/_config.yml",
+		"/home/scott/Programming/sacooper-git/Webpage/assets/themes/semantic/css/semantic.css",
+		"/home/scott/Programming/sacooper-git/Webpage/_includes/themes/semantic/settings.yml",
 		"/home/scott/Programming/sacooper-git/Webpage/rss.xml",
 		"/home/scott/Programming/sacooper-git/Webpage/atom.xml",
-		"/home/scott/Programming/sacooper-git/Webpage/_includes/JB/pages_list",
 		"/home/scott/Programming/sacooper-git/Webpage/blog.md",
 		"/home/scott/Programming/sacooper-git/Webpage/categories.html",
 		"/home/scott/Programming/sacooper-git/Webpage/tags.html",
 		"/home/scott/Programming/sacooper-git/Webpage/archive.html",
-		"/home/scott/Programming/sacooper-git/Webpage/_includes/themes/bootstrap-3/default.html",
-		"/home/scott/Programming/sacooper-git/Webpage/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css",
-		"/home/scott/Programming/sacooper-git/Webpage/index.md",
 		"/home/scott/Programming/sacooper-git/Webpage/contact.html",
 		"/home/scott/Programming/sacooper-git/Webpage/_includes/JB/posts_collate",
 		"/home/scott/Programming/sacooper-git/Webpage/_posts/2014-08-03-and-so-it-begins.md",
-		"/home/scott/Programming/sacooper-git/Webpage/_layouts/post.html",
-		"/home/scott/Programming/sacooper-git/Webpage/_includes/themes/bootstrap-3/post.html",
 		"/home/scott/Programming/sacooper-git/Webpage/_posts/core-samples/2011-12-29-jekyll-introduction.md",
 		"/home/scott/Programming/sacooper-git/Webpage/pages.html",
 		"/home/scott/Programming/sacooper-git/Webpage/assets/themes/bootstrap-3/bootstrap/css/bs-sticky-footer.css",
 		"/home/scott/Programming/sacooper-git/Webpage/assets/themes/bootstrap-3/bootstrap/css/alt.min.css",
-		"/home/scott/Programming/sacooper-git/Webpage/_config.yml",
-		"/home/scott/Programming/sacooper-git/Webpage/assets/themes/bootstrap-3/css/style.css",
 		"/home/scott/Programming/sacooper-git/Webpage/_includes/themes/bootstrap-3/settings.yml",
 		"/home/scott/Programming/sacooper-git/Webpage/.gitignore",
 		"/home/scott/Programming/sacooper-git/Webpage/webpage.sublime-workspace",
@@ -856,18 +867,7 @@
 		"/home/scott/Dropbox/Research/CompLogic/beluga/t/success/modules/adapted/include.bel",
 		"/home/scott/Dropbox/Research/CompLogic/beluga/src/core/context.ml",
 		"/home/scott/Dropbox/Research/CompLogic/beluga/examples/tapl/ch3/evaluation-seq.bel",
-		"/home/scott/Dropbox/Research/CompLogic/beluga/examples/tapl/ch3/exp.bel",
-		"/home/scott/Dropbox/Research/CompLogic/beluga/examples/tapl/ch3/evaluation-2.bel",
-		"/home/scott/Dropbox/Research/CompLogic/beluga/examples/tapl/ch3/evaluation.bel",
-		"/home/scott/Dropbox/Research/CompLogic/beluga/t/success/modules/tapl-ch3.bel",
-		"/home/scott/Dropbox/Research/CompLogic/beluga/examples/tapl/ch3/sources.cfg",
-		"/home/scott/Dropbox/Research/CompLogic/beluga/examples/tapl/ch3/evalu.bel",
-		"/home/scott/Dropbox/Research/CompLogic/beluga/t/success/modules/adapted/cut-elim.bel",
-		"/home/scott/Dropbox/Research/CompLogic/beluga/examples/cut-elim/int-admit.bel",
-		"/home/scott/Dropbox/Research/CompLogic/beluga/examples/cut-elim/int-elim.bel",
-		"/home/scott/Dropbox/Research/CompLogic/beluga/examples/free-vars/fvnat.bel",
-		"/home/scott/Dropbox/Research/CompLogic/beluga/examples/free-vars/fvnat-crec.bel",
-		"/home/scott/Dropbox/Research/CompLogic/beluga/examples/free-vars/fvnat-explicit.bel"
+		"/home/scott/Dropbox/Research/CompLogic/beluga/examples/tapl/ch3/exp.bel"
 	],
 	"find":
 	{
@@ -885,6 +885,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"#00bc8c",
+			".dropdown{",
+			".dropdown",
+			":hover",
+			"a:hover",
+			"a",
+			"col-xs-12",
+			".page-header",
+			"footer",
 			".dropdown:hover",
 			".dropdown{",
 			".dropdown",
@@ -1003,16 +1012,7 @@
 			"%{",
 			"`",
 			"}%",
-			"%{",
-			"comment",
-			"}%",
-			"%{",
-			"`",
-			"Ulexing",
-			"moduleUlexing",
-			"COmment",
-			"Error",
-			"Error."
+			"%{"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1199,6 +1199,38 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"min.css",
+				"assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css"
+			],
+			[
+				"bootstr",
+				"assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css"
+			],
+			[
+				"setup",
+				"_includes/JB/setup"
+			],
+			[
+				"post.h",
+				"_includes/themes/bootstrap-3/post.html"
+			],
+			[
+				"foot",
+				"assets/themes/semantic/css/bs-sticky-footer.css"
+			],
+			[
+				"style",
+				"assets/themes/bootstrap-3/css/style.css"
+			],
+			[
+				"index.md",
+				"index.md"
+			],
+			[
+				"pages_list",
+				"_includes/JB/pages_list"
+			],
 			[
 				"xml",
 				"atom.xml"
@@ -1678,38 +1710,6 @@
 			[
 				"whnf.mli",
 				"src/core/whnf.mli"
-			],
-			[
-				"holes.mli",
-				"src/core/holes.mli"
-			],
-			[
-				"pret",
-				"src/core/pretty.ml"
-			],
-			[
-				"opse",
-				"src/core/opsem.ml"
-			],
-			[
-				"lfreco",
-				"src/core/lfrecon.ml"
-			],
-			[
-				"subor",
-				"src/core/subord.ml"
-			],
-			[
-				"log",
-				"src/core/logic.ml"
-			],
-			[
-				"logic",
-				"src/core/logic.ml"
-			],
-			[
-				"store.",
-				"src/core/store.ml"
 			]
 		],
 		"width": 0.0
