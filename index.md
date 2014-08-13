@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Code in the North
+title: NotScott
 ---
 {% include JB/setup %}
 <!-- 
@@ -44,11 +44,7 @@ We need to clean up the themes, make theme usage guides with theme-specific mark
 
  -->
 
-<img src="http://28.media.tumblr.com/tumblr_lti8x9gJgl1qiwzy8o1_500.jpg" width="100%" height="150px" />
-
 ## About Me
 
 - 3rd year B.SE Student at McGill University
 - Research Programmer with the Logic and Computation Group at McGill University, working under Prof. Brigitte Pientka
-
-

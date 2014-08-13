@@ -12,11 +12,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap styles -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/semantic/css/semantic.min.css" rel="stylesheet">
     <!-- Optional theme -->
     <!-- <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"> -->
     <!-- Sticky Footer -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bs-sticky-footer.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/semantic/css/bs-sticky-footer.css" rel="stylesheet">
     
     <!-- Custom styles -->
   <!--   <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"> -->
@@ -43,71 +43,35 @@
       .dropdown:hover .dropdown-menu {
         display: block;
       }
-      .bg-overlay {
-        content:'';
-        position: absolute;
-        top: 60px;
-        right: 0;
-        bottom: 30px;
-        left: 0;
-        background-image: linear-gradient(to bottom right,#001F3D,#335C85);
-        opacity: .8;
-      }
-      body{
-        margin:0;
-        background: url("{{ ASSET_PATH }}/bw-bg.jpg");
-      }
     </style>
 
   </head>
 
   <body>
     <div id="wrap">
-      <nav class="navbar navbar-default" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header" style="padding-left:1em">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jb-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-        </div>
+      <nav class="ui menu">
+        <a class="header item" href="{{ HOME_PATH }}">{{ site.title }}</a>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="jb-navbar-collapse">
-          <ul class="nav navbar-nav">
+        {% assign pages_list = site.pages %}
+        {% assign group = 'primary' %}
+        {% include JB/pages_list %}
+        <li><a href="http://www.github.com/{{site.author.github}}">Projects</a></li>
+        {% if page.url == "/blog.html" %}
+        <li class="dropdown active">
+        {% else %}
+        <li class="dropdown">
+        {% endif %}
+          <a href="{{ BASE_PATH }}blog.html">Blog <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
             {% assign pages_list = site.pages %}
-            {% assign group = 'primary' %}
+            {% assign group = 'blog-nav'%}
             {% include JB/pages_list %}
-            <li><a href="http://www.github.com/{{site.author.github}}">Projects</a></li>
-            {% if page.url == "/blog.html" %}
-            <li class="dropdown active">
-            {% else %}
-            <li class="dropdown">
-            {% endif %}
-              <a href="{{ BASE_PATH }}blog.html">Blog <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                {% assign pages_list = site.pages %}
-                {% assign group = 'blog-nav'%}
-                {% include JB/pages_list %}
-              </ul>
-              </li>
-            </li>
           </ul>
-          <!-- <form class="navbar-form navbar-right" role="search"> -->
-            <!-- <div class="form-group"> -->
-              <!-- <input type="text" class="form-control" placeholder="Search"> -->
-            <!-- </div> -->
-            <!-- <button type="submit" class="btn btn-default">Submit</button> -->
-          <!-- </form> -->
-        </div><!-- /.navbar-collapse -->
+          </li>
+        </li>
       </nav>
-      <div class="bg-overlay"
-       data-0="background-image:linear-gradient(315deg, hsl(208, 99%, 56%), hsl(119, 86%, 62%));"
-       data-end="background-image:linear-gradient(315deg, hsl(202,100%, 15%),hsl(10, 72%, 50%));">
-      </div>
+
       <div class="container">
         {{ content }}
       </div>
@@ -126,6 +90,6 @@
     <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ ASSET_PATH }}/semantic/javascript/semantic.min.js"></script>
   </body>
 </html>
